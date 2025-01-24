@@ -100,11 +100,8 @@ The folder can be deleted to reset the game server to its default state.
 
 # Resources
 
-- Inspired by: https://github.com/jammsen/docker-insurgency-sandstorm-dedicated-server
 - Built from: https://github.com/RouHim/insurgency-sandstorm-container-image
 - Built to: https://hub.docker.com/r/rouhim/insurgency-sandstorm-server
 - Based on: https://github.com/RouHim/steamcmd-container-image
 - SteamCMD Documentation: https://developer.valvesoftware.com/wiki/SteamCMD
 - Dedicated server guide: https://mod.io/g/insurgencysandstorm/r/server-admin-guide
-- ISMC Mod
-  guide: https://mod.io/g/insurgencysandstorm/m/ismcmod1 | https://mod.io/g/insurgencysandstorm/r/ismcmod-installation-guide
