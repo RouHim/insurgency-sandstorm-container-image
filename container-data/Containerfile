@@ -25,7 +25,7 @@ USER $USER
 COPY --chown=$USER:$USER envini_mapping.ini $USER_HOME/envini_mapping.ini
 
 ENV STEAM_APP_ID "581330"
-ENV STARTUP_COMMAND "Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping Oilfield?Scenario=Scenario_Refinery_Push_Security?MaxPlayers=28 -Port=27102 -QueryPort=27131 -log -hostname=\"My Server\""
+ENV STARTUP_COMMAND 'Insurgency/Binaries/Linux/InsurgencyServer-Linux-Shipping $MAP?Scenario=$SCENARIO?MaxPlayers=$MAX_PLAYERS -Port=27102 -QueryPort=27131 -log -hostname="$SERVER_NAME"'
 
 # expose game and query port
 EXPOSE 27102/tcp \

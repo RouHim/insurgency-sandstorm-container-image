@@ -7,13 +7,17 @@ services:
     restart: unless-stopped
     environment:
       FAST_BOOT: "false"
+      SERVER_NAME: "My Server"
+      MAP: "Oilfield"
+      SCENARIO: "Scenario_Refinery_Push_Security"
+      MAX_PLAYERS: "28"
     volumes:
       - "./data:/data"
     ports:
-      - "0.0.0.0:27102:27102/udp"
-      - "0.0.0.0:27102:27102/tcp"
-      - "0.0.0.0:27131:27131/udp"
-      - "0.0.0.0:27131:27131/tcp"
+      - "27102:27102/udp"
+      - "27102:27102/tcp"
+      - "27131:27131/udp"
+      - "27131:27131/tcp"
     logging:
       driver: "json-file"
       options:
