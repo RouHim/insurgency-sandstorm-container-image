@@ -21,7 +21,6 @@
 
 * [Docker](https://docs.docker.com/engine/install/)
 * [Docker Compose](https://docs.docker.com/compose/install/standalone/)
-* At least 8GB RAM
 
 ## Installation
 
@@ -83,25 +82,21 @@ The server checks for updates and validates on every boot per default.
 
 > The server configuration does not differ from the official server configuration.
 > Just follow an existing server configuration guide
-> like [this](https://steamcommunity.com/sharedfiles/filedetails/?id=2992700419&snr=1_2108_9__2107).
-
-The `config` folder contains the configuration files for the game server:
-
-* The server owners list, in a file called `ownerswhitelist.txt`
-* The game server configuration, in a file called `dedicatedserver.cfg`
-* The game saves, in a folder called `Saves`
-* The game settings, in a file called `SonsGameSettings.cfg`
-
-All files and folders in the `config` will be created automatically when the server is started for the first time.
-
-> `SkipNetworkAccessibilityTest` is always forced to `true`,
-> because the test method is not working in a container environment.
-
+> like [this](https://mod.io/g/insurgencysandstorm/r/server-admin-guide).
 
 The `data/` folder contains the game server data.
 Feel free to modify files in this folder,
 but be aware that the game server must be restarted for changes to take effect.
 The folder can be deleted to reset the game server to its default state.
+
+### Environment variables
+
+| Variable    | Default Value                     | Description                   |
+|-------------|-----------------------------------|-------------------------------|
+| SERVER_NAME | "My Server"                       | The name of your game server  |
+| MAP         | "Oilfield"                        | The map to be loaded          |
+| SCENARIO    | "Scenario_Refinery_Push_Security" | The scenario to be played     |
+| MAX_PLAYERS | "28"                              | The maximum number of players |
 
 # Resources
 
@@ -111,4 +106,5 @@ The folder can be deleted to reset the game server to its default state.
 - Based on: https://github.com/RouHim/steamcmd-container-image
 - SteamCMD Documentation: https://developer.valvesoftware.com/wiki/SteamCMD
 - Dedicated server guide: https://mod.io/g/insurgencysandstorm/r/server-admin-guide
-- ISMC Mod guide: https://mod.io/g/insurgencysandstorm/m/ismcmod1 | https://mod.io/g/insurgencysandstorm/r/ismcmod-installation-guide
+- ISMC Mod
+  guide: https://mod.io/g/insurgencysandstorm/m/ismcmod1 | https://mod.io/g/insurgencysandstorm/r/ismcmod-installation-guide
