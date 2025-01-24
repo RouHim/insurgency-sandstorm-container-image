@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-    This repository provides a <a href="https://github.com/RouHim/insurgency-sandstorm-container-image/actions/workflows/scheduled-security-audit.yaml">safe</a> container image for the <a href="https://insurgency-sandstorm.com">Sons of the Forest</a> game server. 
+    This repository provides a <a href="https://github.com/RouHim/insurgency-sandstorm-container-image/actions/workflows/scheduled-security-audit.yaml">safe</a> container image for the <a href="https://insurgency-sandstorm.com">Insurgency: Sandstorm</a> dedicated server. 
   It is designed to be used with Docker Compose, making it easy to set up and manage your game server environment.
 </p>
 
