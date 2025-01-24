@@ -35,8 +35,8 @@ cd insurgency-sandstorm-container-image
 Before starting the server, create the required folder structure, and adjust the permissions:
 
 ```bash
-mkdir config/ data/ 
-chmod 777 config/ data/
+mkdir data/ 
+chmod 777 data/
 ```
 
 > The `chmod` command is recommended to avoid permission issues.
@@ -55,7 +55,6 @@ This will pull the latest image and start the server in detached mode.
 
 When starting the server for the first time:
 
-* The config files and folders will be automatically created in the `config/` folder.
 * The server will download the latest version of the game from Steam to the `data/` folder.
 
 > You have to restart after the first start.
